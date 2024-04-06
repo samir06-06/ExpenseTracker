@@ -1,0 +1,31 @@
+.inc-exp {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+#inc {
+  color: rgb(35, 185, 35);
+}
+
+.in-and-out {
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+h4 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+#exp {
+  color: red;
+}

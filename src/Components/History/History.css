@@ -1,0 +1,41 @@
+.per-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  position: relative;
+  border-radius: 5px;
+  padding: 0 15px;
+  left: 32px;
+}
+
+.red-border {
+  border-right: 5px solid red;
+}
+
+.green-border {
+  border-right: 5px solid rgb(35, 185, 35);
+}
+
+.per {
+  position: relative;
+  left: -47px;
+  /* display: flex; */
+  gap: 5px;
+  flex-direction: column;
+  max-height: 100px;
+  overflow-y: scroll;
+  width: 315px;
+  align-items: center;
+}
+
+.per i {
+  z-index: 3;
+  left: -30px;
+  top: 16px;
+  position: absolute;
+  background-color: rgb(216, 0, 0);
+  padding: 3px 4px 1px 4px;
+  color: white;
+}
