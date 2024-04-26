@@ -4,7 +4,7 @@ function Transaction({
   HandleNumberChange,
   inputAsset,
   HandleAssetChange,
-  updateValuePair,
+  postValuePair,
 }) {
   const text = document.getElementById("text")
   const number = document.getElementById("number")
@@ -13,7 +13,7 @@ function Transaction({
       alert("Please fill in both input fields.")
       return
     } else {
-      updateValuePair()
+      postValuePair()
     }
     text.value = ""
     number.value = ""

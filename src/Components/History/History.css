@@ -1,3 +1,8 @@
+.history {
+  display: flex;
+  flex-direction: column;
+}
+
 .per-body {
   display: flex;
   justify-content: space-between;
@@ -20,7 +25,7 @@
 
 .per {
   position: relative;
-  left: -47px;
+  /* left: -7px; */
   /* display: flex; */
   gap: 5px;
   flex-direction: column;
@@ -30,12 +35,39 @@
   align-items: center;
 }
 
-.per i {
+.per .fa-xmark {
   z-index: 3;
   left: -30px;
-  top: 16px;
+  /* top: 16px; */
   position: absolute;
   background-color: rgb(216, 0, 0);
-  padding: 3px 4px 1px 4px;
   color: white;
+  padding: 3px 4px 1px 4px;
+}
+
+.per .fa-pen-to-square {
+  background: rgb(35, 185, 35);
+  color: white;
+  font-size: 14px;
+  padding: 2px 4px 4px 4px;
+}
+
+.edit {
+  display: none;
+  position: relative;
+  width: 268px;
+  top: 0px;
+  justify-content: space-around;
+  align-items: baseline;
+  transition: transform 0.3s ease; /* Adding transition for transform property */
+  transform: translateY(-20px); /* Initial position change */
+}
+
+.edit input {
+  width: 65px;
+  /* font-size: 10px; */
+}
+
+.edit button {
+  padding: 5px;
 }

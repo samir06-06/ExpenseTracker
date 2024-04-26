@@ -6,10 +6,10 @@ function IncExp({ allTransactions }) {
   let totalExpense = 0
 
   allTransactions.forEach((transaction) => {
-    if (transaction.inputNumber.startsWith("-")) {
-      totalExpense += +transaction.inputNumber
+    if (transaction.value.startsWith("-")) {
+      totalExpense += +transaction.value
     } else {
-      totalIncome += +transaction.inputNumber
+      totalIncome += +transaction.value
     }
   })
 

@@ -5,7 +5,7 @@ function Salary({ allTransactions }) {
   let totalSum = 0
 
   allTransactions.forEach((transaction) => {
-    totalSum += +transaction.inputNumber
+    totalSum += +transaction.value
   })
 
   return (
